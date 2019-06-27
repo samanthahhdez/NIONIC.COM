@@ -1,0 +1,30 @@
+.service_main_box{
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: #0176ff;
+    height:450px;
+    background-color: #0176ff;
+    color: white;
+}
+
+.service_box{
+    /*float: left;*/
+    background-color: blue;
+    /*height: 150px;*/
+    height: 33.66%;
+    /*width: 300px;*/
+    width: 30%;
+    border: 1px solid;
+    border-color: blue;
+    text-align: center;
+    margin-left: -16px;
+    margin-top: -1px;
+}
+
+#service_1{
+    border-top-left-radius: 10px;
+}
+
+#service_3{
+    border-bottom-left-radius: 10px;
+}
