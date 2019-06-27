@@ -6,4 +6,4 @@ from django.http import HttpResponse
 
 def index(request):
     my_dict = {}
-    return render (request,'nionic_app/index.html', context=my_dict)
+    return render (request, 'nionic_app/index.html', context=my_dict)

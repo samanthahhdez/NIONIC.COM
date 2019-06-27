@@ -1,18 +1,22 @@
-{% extends "nionic_app/navbar.html" %}
-{% load staticfiles %}
-<html>
-  <body>
-    <div id="nosotros">
-    </div>
-    <div id="servicios">
-    </div>
-    <div id="equipo">
-    </div>
-    <div id="portafolio">
-    </div>
-    <div id="testimonio">
-    </div>
-    <div id="contacto">
-    </div>
-  </body>
-</html>
+{% extends "nionic_app/base.html" %}
+{% load static %}
+{% block body %}
+<div id="nosotros">
+</div>
+<div id="servicios">
+  <br><br>
+  <div class="service_main_box">
+    <div class="service_box" id="service_1">Alan</div>
+    <div class="service_box" id="service_2">Macias</div>
+    <div class="service_box" id="service_3">Lopez</div>
+  </div>
+</div>
+<div id="equipo">
+</div>
+<div id="portafolio">
+</div>
+<div id="testimonio">
+</div>
+<div id="contacto">
+</div>
+{% endblock %}
