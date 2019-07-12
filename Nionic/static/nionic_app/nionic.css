@@ -1,8 +1,8 @@
-.service_main_box{
+#service_main_box{
     border: 2px solid;
-    border-radius: 10px;
+    border-radius: 20px;
     border-color: #0176ff;
-    height:450px;
+    height: 450px;
     background-color: #0176ff;
     color: white;
 }
@@ -10,21 +10,23 @@
 .service_box{
     /*float: left;*/
     background-color: blue;
-    /*height: 150px;*/
-    height: 33.66%;
-    /*width: 300px;*/
-    width: 30%;
-    border: 1px solid;
+    /*height: 33.66%;*/
+    width: 140px;
+    height: 140px;
+    border: 2px solid;
     border-color: blue;
+    border-radius: 100%;
     text-align: center;
-    margin-left: -16px;
-    margin-top: -1px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
 }
 
-#service_1{
-    border-top-left-radius: 10px;
+#service_2{
+    margin-top: 55%;
 }
 
 #service_3{
-    border-bottom-left-radius: 10px;
+    margin-top: 110%;
 }
+
