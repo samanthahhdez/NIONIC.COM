@@ -1,2 +1,27 @@
 <script>
+    $(document).ready(function(){
+        let service_messages = {
+            'service_1': 'Hacemos apps web bien vergas',
+            'service_2': 'Pura app movil mamalona',
+            'service_3': 'Al chile nadie sabe hacer apps de escritorio'
+        };
+        $(".service_box").click(function(){
+            let div_id = $(this).attr("id");
+            $("#service_box_list").children().each(function(){
+                let curr_box_id = $(this).attr("id");
+                if(curr_box_id === div_id){
+                    //TweenMax.to("#" + curr_box_id, .5, {width: "180px", height: "180px", backgroundColor: "#1176ff"});
+                    TweenMax.to("#" + curr_box_id, .5, {transform: "scale(1.3)", backgroundColor: "#1176ff", zIndex: 1});
+                }
+                else{
+                    TweenMax.to("#" + curr_box_id, .5, {transform: "scale(1)", backgroundColor: "blue", zIndex: 0});
+                }
+            });
+            //TweenMax.to("#service_main_box", .5, {text: service_messages[div_id]});
+            $("#service_main_box").text(service_messages[div_id]);
+        });
+
+
+        $("#service_1").click();
+    });
 </script>
